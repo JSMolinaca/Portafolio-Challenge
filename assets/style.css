@@ -56,3 +56,18 @@ h1 {
 .p-persona {
     font-size: 20px;
 }
+
+.section-me {
+    background-color: #EAF2FD;
+    padding: 40px;
+
+}
+
+.p-me {
+    font-size: 16px;
+    padding-top: 14px;
+}
+
+#h3-me {
+    font-size: 32px;
+}
