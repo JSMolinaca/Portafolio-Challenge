@@ -71,3 +71,17 @@ h1 {
 #h3-me {
     font-size: 32px;
 }
+
+.section-skills {
+    height: 1245px;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
