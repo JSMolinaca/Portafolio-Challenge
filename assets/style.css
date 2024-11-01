@@ -85,3 +85,20 @@ h1 {
     flex-direction: column;
     gap: 30px;
 }
+
+h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.list-skills {
+    display: flex;
+    gap: 120px;
+}
+
+.li-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self;
+}
