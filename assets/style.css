@@ -4,17 +4,26 @@
     margin: 0;
 }
 
+body {
+    background-color: #F5F5F5;
+}
+
 .header-index {
     width: 80%;
     height: 4em;
     margin: 0 auto;
-    background-color: red;
+    background-color: #F5F5F5;
     align-content: center;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 ol {
@@ -24,7 +33,9 @@ ol {
 .list-nav {
     display: flex;
     list-style-type: none;
-    gap: 15px;
+    gap: 35px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .main-index {
@@ -60,6 +71,7 @@ h1 {
 .section-me {
     background-color: #EAF2FD;
     padding: 40px;
+    margin-top: 30px;
 
 }
 
@@ -68,13 +80,13 @@ h1 {
     padding-top: 14px;
 }
 
-#h3-me {
+.h3-me {
     font-size: 32px;
 }
 
 .section-skills {
     height: auto;
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -106,7 +118,7 @@ li {
 }
 
 .cont-skills {
-    background-color: aquamarine;
+    background-color: #FFFFFF;
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
@@ -115,7 +127,9 @@ li {
     /* align-items: last baseline; */
     width: 80px;
     height: 90px;
+    padding: 10px;
 }
+
 
 .formacion-text, .experiencia-title {
     margin-top: 90px;
@@ -147,6 +161,15 @@ li {
 .button-decodificador {
     padding: 14px;
     margin: 5px;
+    background-color: #EAF2FD;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    cursor: pointer;
+}
+
+#demo {
+    background-color: #2A7AE4;
+    color: #FFFFFF ;
 }
 
 .experiencia-cont2 {
@@ -214,6 +237,15 @@ li {
     justify-content: center;
     height: 40px;
     align-items: center;
+    background-color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.img-profile {
+    border-radius: 50%;
+    margin-left: 50px;
 }
 
 footer {
@@ -224,4 +256,67 @@ footer {
     justify-content: center;
     text-align: center;
     font-size: 20px;
+}
+
+@media (min-width: 360px) {
+    .sobremi, .skillss, .hobbies, .formacion, .proyectos {
+        display: none;
+    }
+    
+    .nav-bar {
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .section-persona {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .img-profile {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+    
+    .p-persona {
+        font-size: 15px;
+    }
+
+    .list-skills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .list-skills, .cont-skills {
+        flex: 1 1 calc(50%  -20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #FFFFFF;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .cont-skills {
+        width: auto;
+    }
+
+    .section-formacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .experiencia-cont, .experiencia-cont2, .experiencia-cont3, .experiencia-cont4 {
+        display: flex;
+        flex-direction: column;
+    }
 }
